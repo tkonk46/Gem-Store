@@ -1,0 +1,50 @@
+[
+{
+"name": "Dodecahedron",
+  "price": 2.95,
+  "description": "Some gems have hidden qualities beyond their lustre, beyond their shine... Dodecahedron is one of those gems.",
+  "canPurchase": true,
+  "soldOut": true,
+  "images":[
+    {
+      "full": "content/gem-01.gif"
+    }
+  ],
+  "reviews":[
+    {
+      "stars":5,
+      "body": "I love this product.",
+      "author": "joel@codingtemple"
+    },
+    {
+      "stars": 1,
+      "body": "This gem blows.",
+      "author": "joel@hater.com"
+    }
+  ]
+},
+{
+  "name": "Pentagonal Gem",
+  "price": 5.95,
+  "description": "A five sided gem similar to a prolific government building.",
+  "canPurchase": true,
+  "soldOut": false,
+  "images":[
+    {
+      "full":"content/gem-02.gif"
+    }
+  ],
+  "reviews":[
+    {
+      "stars": 3,
+      "body": "It is all right.",
+      "author": "me@google.com"
+    },
+    {
+      "stars": 2,
+      "body": "I did not care for this gem.",
+      "author": "joel@hater.com"
+    }
+  ]
+}
+]

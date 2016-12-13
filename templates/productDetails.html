@@ -1,0 +1,4 @@
+<h1>{{product.name}}</h1>
+<img ng-repeat="image in product.images" ng-src="{{image.full}}"/>
+<h2>{{product.price| currency}}</h2>
+<button ng-disabled="product.soldOut" ng-show="product.canPurchase" class="btn btn-primary">Add to cart</button>

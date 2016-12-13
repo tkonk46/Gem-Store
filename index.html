@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+      <title>Coding Temple- Gemstore</title>
+      <link href="content/bootstrap-theme.css" type="text/css" rel="stylesheet">
+      <link href="content/bootstrap.css" type="text/css" rel="stylesheet">
+      <link href="content/style.css" type="text/css" rel="stylesheet">
+  </head>
+<body
+  ng-controller="myController"class="container">
+  <div class="row">
+    <div ng-repeat="product in model" class="col-xs-12 col-sm-4 well">
+        <product-details></product-details>
+        <panels></panels>
+</div>
+</div>
+  <!---<my-example></my-example>
+  <p>I am {{4+6}}</p>
+  <p>{{"hello "+controller.name}}</p>
+  <p>{{5*10|currency}}</p>
+  <p>{{'1388123412323'|date:'MM/dd/yyyy @ h:mma'}}</p>
+  <p>{{'octagon gem'|uppercase}}</p>--->
+
+  <script src="scripts/angular.js" type="text/javascript"></script>
+  <script src="scripts/script.js" type="text/javascript"></script>
+  <script src="scripts/productDirectives.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js" type="text/javascript"></script>
+</body>
+</html>

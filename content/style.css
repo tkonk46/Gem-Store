@@ -1,0 +1,16 @@
+.well{
+  min-height: 450px;
+}
+
+button{
+        margin-bottom: 0.5em;
+}
+
+#formsubmit{
+  background: linear-gradient(#00a5ff, #006399);
+  color: whitesmoke;
+}
+
+select, textarea, input{
+  margin:2%;
+}

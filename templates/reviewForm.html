@@ -1,0 +1,30 @@
+ <form name="reviewForm" ng-submit="validate() && reviewForm.$valid && addReview(product)" novalidate>
+      <div class="formset" ng-class="{'has-error' : reviewForm.stars.$invalid && reviewForm.stars.$dirty }">
+      <blockquote>
+        <b>Stars:{{review.stars}}</b><br>
+        {{review.body}}<br>
+        <cite>By:{{review.author}}</cite>
+      </blockquote>
+          <fieldset>
+      <legend>Write a review</legend>
+      <select name="stars" class="form-control" ng-model="review.stars" required>
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select>
+      <span class="text-danger" ng-show="reviewForm.stars.$invalid && reviewForm.stars.$dirty">Please enter a rating</span>
+    </div>
+    <div class="formset" ng-class="{'has-error' : reviewForm.body.$invalid && reviewForm.body.$dirty }">
+      <textarea name="body" class="form-control" ng-model="review.body" placeholder="Write your review here" required></textarea>
+      <span class="text-danger" ng-show="reviewForm.body.$invalid && reviewForm.body.$dirty">Please enter some text</span>
+  </div>
+  <div class="formset" ng-class="{'has-error' : reviewForm.author.$invalid && reviewForm.author.$dirty}">
+      <label>by:</label>
+      <input name="author" class="form-control" ng-model="review.author" placeholder="Email" type="email" required/>
+      <span class="text-danger" ng-show="reviewForm.author.$invalid && reviewForm.author.$dirty">Please enter your email</span>
+        </div>
+      <input class="form-control" id="formsubmit" type="submit" value="Submit"/>
+        </fieldset>
+    </form>
